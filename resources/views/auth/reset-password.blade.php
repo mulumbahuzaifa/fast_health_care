@@ -34,7 +34,26 @@
         </form>
     </x-jet-authentication-card> --}}
 
+    <div class="container bread-1">
+        <div class="row">
+          <div class="col-12">
 
+            <div class="breadcrumbs">
+                <h1>Reset Password</h1>
+              <ul class="d-flex flex-wrap align-items-center p-0 m-0">
+                <li><a href="#">Home</a></li>
+                <li>Reset Password</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="pickgradient">
+    <img
+    class="header-img"
+    src="{{ asset('assets/images/xsubscribe-bg.png.pagespeed.ic.VyPeciUd7q.jpg') }}"
+    alt=""
+    />
     <section class="shop login section">
         <div class="container">
             <div class="row">

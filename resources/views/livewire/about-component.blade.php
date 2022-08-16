@@ -13,13 +13,13 @@
           </div>
         </div>
       </div>
-      <div class="img-gradient">
-      <img
+      <div class="pickgradient">
+        <img
         class="header-img"
-        src="{{ asset('assets/images/xabout-bg.png.pagespeed.ic.z5sPeZ2m7T.webp') }}"
+        src="{{ asset('assets/images/fast-15.jpg') }}"
         alt=""
       />
-    </div>
+      </div>
     <div class="med-history">
         <div class="container">
           <div class="row align-items-end">
@@ -35,7 +35,8 @@
             <div class="col-12 col-lg-6 mt-5 mt-lg-0">
               <img
                 class="responsive"
-                src="{{ asset('assets/images/xabout.jpg.pagespeed.ic.gAzC7yCDMN.webp') }}"
+                style="width: 100%"
+                src="{{ asset('assets/images/fast-14.jpg') }}"
                 alt=""
               />
             </div>
@@ -124,6 +125,7 @@
             <div class="col-12">
               <h2>The Medical Team</h2>
             </div>
+            @if ($staffs->count() > 0)
             @foreach ($staffs as $staff)
             <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
                 <div class="medical-team-wrap">
@@ -137,6 +139,9 @@
                 </div>
               </div>
             @endforeach
+            @else
+            <div class="alert alert-danger" role="alert"><h3 class="box-title alert-link">No Staff members added at the moment</h3></div>
+            @endif
 
           </div>
         </div>

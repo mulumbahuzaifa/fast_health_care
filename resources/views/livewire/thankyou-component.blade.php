@@ -13,11 +13,13 @@
           </div>
         </div>
       </div>
-      <img
+      <div class="pickgradient">
+        <img
         class="header-img"
-        src="{{ asset('assets/images/xservice-bg.png.pagespeed.ic.HSgCrg3v8b.webp') }}"
+        src="{{ asset('assets/images/fast-15.jpg') }}"
         alt=""
       />
+      </div>
 
     <div class="quality-services">
         <div class="container">

@@ -13,13 +13,13 @@
           </div>
         </div>
       </div>
-      <img
+      <div class="pickgradient">
+        <img
         class="header-img"
-        src="{{ asset('assets/images/xcontact-bg.png.pagespeed.ic.gdCRycCaaz.webp') }}"
+        src="{{ asset('assets/images/fast-15.jpg') }}"
         alt=""
-        data-pagespeed-url-hash="675108147"
-        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
       />
+      </div>
     <div class="contact-page-short-boxes">
         <div class="container">
           <div class="row">
@@ -75,8 +75,7 @@
                     >
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Donec
-                    males uada lorem maximus mauris sceler isque, at rutrum nulla.
+                    Dialing this on your CaptionCall phone will connect you with Emergency Services. You may not have access to captions, depending on the emergency.
                   </p>
                 </div>
               </div>

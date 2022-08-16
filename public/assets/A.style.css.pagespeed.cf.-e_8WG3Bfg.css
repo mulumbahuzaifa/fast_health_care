@@ -39,8 +39,8 @@ a:active {
 }
 
 .nav-bar {
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.356);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.151);
     top: 0;
     left: 0;
     z-index: 9999;
@@ -50,7 +50,7 @@ a:active {
 
 .site-branding {
     width: calc(100% - 24px);
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .site-branding a {
@@ -217,11 +217,11 @@ a:active {
 }
 
 .hero-slider {
-    max-height: 950px;
+    max-height: 700px;
 }
 
 .hero-content-wrap {
-    min-height: 700px;
+    min-height: 500px;
     position: relative;
     color: #fff;
     background-size: cover;
@@ -235,8 +235,8 @@ a:active {
 }
 
 .hero-content-overlay h1 {
-    margin: 0;
-    font-size: 60px;
+    margin: 80px 0 0 0;
+    font-size: 50px;
     font-weight: 600;
     line-height: 1.2;
     color: #d4d4d4;
@@ -253,7 +253,7 @@ a:active {
     top: 50%;
     left: 0;
     z-index: 99;
-    width: 120px;
+    width: 200px;
     margin-top: -60px;
 }
 
@@ -819,34 +819,34 @@ ul.tabs-nav .tab-nav.active {
     background: -moz-linear-gradient(
         180deg,
         rgba(0, 111, 148) 0%,
-        rgba(188, 125, 228, 1) 100%
+        rgb(30, 20, 36) 100%
     );
     background: -webkit-gradient(
         linear,
         left top,
         right top,
         color-stop(0%, rgba(0, 111, 148)),
-        color-stop(100%, rgba(188, 125, 228, 1))
+        color-stop(100%, rgba(30, 20, 36, 1))
     );
     background: -webkit-linear-gradient(
         180deg,
         rgba(0, 111, 148) 0%,
-        rgba(188, 125, 228, 1) 100%
+        rgba(30, 20, 36, 1) 100%
     );
     background: -o-linear-gradient(
         180deg,
         rgba(0, 111, 148) 0%,
-        rgba(188, 125, 228, 1) 100%
+        rgba(30, 20, 36, 1) 100%
     );
     background: -ms-linear-gradient(
         180deg,
         rgba(0, 111, 148) 0%,
-        rgba(188, 125, 228, 1) 100%
+        rgba(30, 20, 36, 1) 100%
     );
     background: linear-gradient(
         270deg,
         rgb(0, 111, 148) 0%,
-        rgba(188, 125, 228, 1) 100%
+        rgba(30, 20, 36, 1) 100%
     );
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18a3eb', endColorstr='#18a3eb', GradientType=1);
 }
@@ -876,7 +876,7 @@ ul.tabs-nav .tab-nav.active {
 
 .our-departments-cont .entry-header img {
     margin-right: 16px;
-    height: 350px;
+    height: 300px;
     width: 300px;
 }
 
@@ -1077,6 +1077,7 @@ ul.tabs-nav .tab-nav.active {
     background-color: #404040d5;
     border-radius: 5px;
     padding: 10px;
+    height: 550px;
 }
 
 .the-news-wrap figure {
@@ -1117,7 +1118,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .the-news-wrap .entry-content {
-    margin-top: 32px;
+    margin-top: 10px;
 }
 
 .the-news-wrap .entry-content p {
@@ -1140,7 +1141,7 @@ ul.tabs-nav .tab-nav.active {
     margin-bottom: 0;
     font-size: 60px;
     font-weight: 600;
-    color: #404040;
+    color: #000000;
 }
 /* .img-gradient::after {
     content: "";
@@ -1151,13 +1152,52 @@ ul.tabs-nav .tab-nav.active {
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 } */
+.pickgradient {
+    display: inline-block;
+    background: -moz-linear-gradient(
+        top,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.65) 100%
+    ); /* FF3.6+ */
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0%, rgba(0, 0, 0, 0.65)),
+        color-stop(100%, rgba(0, 0, 0, 0))
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+        top,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.65) 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+        top,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.65) 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(
+        top,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.65) 100%
+    ); /* IE10+ */
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.65) 100%
+    ); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
 
 .single-page .header-img {
     position: absolute;
+    content: "";
     top: 0;
     right: 0;
-    max-width: 65%;
-    height: auto;
+    width: 100%;
+    height: 360px;
+    border-radius: 20px;
+    z-index: -1;
 }
 
 .breadcrumbs {
@@ -1165,7 +1205,7 @@ ul.tabs-nav .tab-nav.active {
     top: 160px;
     font-size: 14px;
     font-weight: 500;
-    color: #828282;
+    color: #0e0e0e;
 }
 
 .breadcrumbs ul {
@@ -1177,7 +1217,7 @@ ul.tabs-nav .tab-nav.active {
 
     padding-right: 10px;
     margin-right: 5px;
-    color: #18a3eb;
+    color: #186ceb;
 }
 
 .breadcrumbs li::after {
@@ -1187,7 +1227,7 @@ ul.tabs-nav .tab-nav.active {
     right: 0;
     width: 6px;
     height: 100%;
-    color: #828282;
+    color: #000000;
 }
 
 .breadcrumbs li:nth-last-of-type(1)::after {
@@ -1195,7 +1235,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .breadcrumbs a {
-    color: #828282;
+    color: #111111;
 }
 
 .med-history {

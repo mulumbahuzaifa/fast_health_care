@@ -13,13 +13,13 @@
         </div>
         </div>
     </div>
-    <img
+    <div class="pickgradient">
+        <img
         class="header-img"
-        src="{{ asset('assets/images/xnews-bg.png.pagespeed.ic.NC11JZBM0J.webp') }}"
+        src="{{ asset('assets/images/fast-15.jpg') }}"
         alt=""
-        data-pagespeed-url-hash="3320407324"
-        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-    />
+      />
+      </div>
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-8">

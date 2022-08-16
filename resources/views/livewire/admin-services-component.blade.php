@@ -1,13 +1,26 @@
 <div>
 
-  <style>
-      nav svg{
-          height: 20px;
-      }
-      nav .hidden{
-          display: block !important;
-      }
-  </style>
+    <div class="container bread-1">
+        <div class="row">
+        <div class="col-12">
+
+            <div class="breadcrumbs">
+                <h1>Services</h1>
+            <ul class="d-flex flex-wrap align-items-center p-0 m-0">
+                <li><a href="/">Home</a></li>
+                <li>Services</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="pickgradient">
+        <img
+        class="header-img"
+        src="{{ asset('assets/images/xfooter-bg.png.pagespeed.ic.mv67PyNb6Q.png') }}"
+        alt=""
+      />
+      </div>
   <div class="container" style="padding: 70px 0; margin:0px auto 100px auto;">
       <div class="row">
           <div class="col-md-12">
@@ -28,7 +41,8 @@
                                   <th>Id</th>
                                   <th>Image</th>
                                   <th>Name</th>
-                                  <th>Sickness</th>
+                                  <th>Difficulty</th>
+                                  <th>Description</th>
                                   <th>Date</th>
                                   <th>Action</th>
                               </tr>
@@ -40,6 +54,7 @@
                                       <td><img src="{{ asset('assets/images/services') }}/{{ $service->image }}" width="60" height="60" alt="{{ $service->name }}"></td>
                                       <td>{{ $service->name }}</td>
                                       <td>{{ $service->category->name }}</td>
+                                      <td>{!! str_limit(strip_tags($service->description),100,'...')  !!}</td>
                                       <td>{{ $service->created_at }}</td>
                                       <td>
                                           <a href="{{ route('admin.editservice', ['service_slug'=> $service->slug]) }}" ><i class="fa fa-edit fa-2x"></i></a>

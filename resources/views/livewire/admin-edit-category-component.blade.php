@@ -1,14 +1,27 @@
 <div>
 
 <!-- Banner End -->
-    <style>
-        nav svg{
-            height: 20px;
-        }
-        nav .hidden{
-            display: block !important;
-        }
-    </style>
+<div class="container bread-1">
+    <div class="row">
+    <div class="col-12">
+
+        <div class="breadcrumbs">
+            <h1>Edit Difficulty</h1>
+        <ul class="d-flex flex-wrap align-items-center p-0 m-0">
+            <li><a href="/">Home</a></li>
+            <li>Edit Difficulty</li>
+        </ul>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="pickgradient">
+    <img
+    class="header-img"
+    src="{{ asset('assets/images/xfooter-bg.png.pagespeed.ic.mv67PyNb6Q.png') }}"
+    alt=""
+  />
+  </div>
     <div class="container" style="padding: 70px 0; margin:0px auto 100px auto;">
         <div class="row">
             <div class="col-md-12">

@@ -13,13 +13,13 @@
         </div>
         </div>
     </div>
-    <img
+    <div class="pickgradient">
+        <img
         class="header-img"
-        src="{{ asset('assets/images/xnews-bg.png.pagespeed.ic.NC11JZBM0J.webp') }}"
+        src="{{ asset('assets/images/fast-15.jpg') }}"
         alt=""
-        data-pagespeed-url-hash="3320407324"
-        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-    />
+      />
+      </div>
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-8">
@@ -128,25 +128,26 @@
                     <li>Sunday <span>9.30 - 15.00</span></li>
                     </ul>
                 </div>
-                <div class="emergency-box">
-                    <h2 class="d-flex align-items-center">Emergency</h2>
-                    <div class="call-btn text-center">
-                    <a
-                        class="d-flex justify-content-center align-items-center button gradient-bg"
-                        href="#"
-                        ><img
-                        src="data:image/webp;base64,UklGRkgCAABXRUJQVlA4TDwCAAAvH8AHEG+loG0byfxJ39NuGOZ//g0mbZtb0hamyG3bBjmNDvobuDNgFgQAoAV4hEFBwFIQPkxg/4MvK8brirgp44QYXOUhIAsCy73n6AwzZavwAaEAIlvWl2vwQykrAom2tR1zc2Ym+FPHtm0bdWzbTurUbWzb5k3OfD8uIaL/Dty2cSRJ2/vu3SdQ1iK+5cP4xMfWREs06TR4eTLempXV+v/4atRVfc6y/bTRCZkOtSfdVgr76i3BbmbMFkVffJ53QDRq+zSP7hodapbvuwEQfJ4WcvgSLRYvPQYsFncd8D/MQ2bX6OioO4JDn4C60dp1R/wPc2UcVubvhSMo7YXheeFI7YYT/gcRMlxYkMH7SQp7gNpNZ5ratWB25j6SA1C7lX0aCZ0PRo08PDxsC02WLAUA0HeXipEqSZJ0WEhSqEjb3wtrAH4UYKIcmUEiOSvTMQDm108ELg8PDx2ZODw8EfE+7y0F4LswsvHy8jp2YSHTy0t89XY3r78BEHiSjpbDSNi2OQoFIEzeYVb0ugIVs+QuSyr9np2d9ZXzpQN+dqIwq+5qDNht1QJpzzUVdGAOOJtq8LHQ0p8iAJw3ayH6l8JGs+Y54QLJWxayf4Qp20JrMbOvU9mHb8DrKBIUK7M3zVbH/bv3wN9Yx1sUdNyoRdCtY/Zd/ZqDKT2oJ7NWKAOV1lVLWVABB7Vcx/pRbW3oKXJbbicfqcKzwZ1YBM3y96rM0GL8zsJwUVLJ4Nq8HxqVwgsGxrteBRgQBQ=="
-                        data-pagespeed-url-hash="640029359"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                        />
-                        +34 586 778 8892</a
-                    >
+                @if ($setting->phone)
+                    <div class="emergency-box">
+                      <h2 class="d-flex align-items-center">Emergency</h2>
+                      <div class="call-btn text-center">
+                        <a
+                          class="d-flex justify-content-center align-items-center button gradient-bg"
+                          href="tel:{{ $setting->phone }}"
+                          ><img
+                            src="data:image/webp;base64,UklGRkgCAABXRUJQVlA4TDwCAAAvH8AHEG+loG0byfxJ39NuGOZ//g0mbZtb0hamyG3bBjmNDvobuDNgFgQAoAV4hEFBwFIQPkxg/4MvK8brirgp44QYXOUhIAsCy73n6AwzZavwAaEAIlvWl2vwQykrAom2tR1zc2Ym+FPHtm0bdWzbTurUbWzb5k3OfD8uIaL/Dty2cSRJ2/vu3SdQ1iK+5cP4xMfWREs06TR4eTLempXV+v/4atRVfc6y/bTRCZkOtSfdVgr76i3BbmbMFkVffJ53QDRq+zSP7hodapbvuwEQfJ4WcvgSLRYvPQYsFncd8D/MQ2bX6OioO4JDn4C60dp1R/wPc2UcVubvhSMo7YXheeFI7YYT/gcRMlxYkMH7SQp7gNpNZ5ratWB25j6SA1C7lX0aCZ0PRo08PDxsC02WLAUA0HeXipEqSZJ0WEhSqEjb3wtrAH4UYKIcmUEiOSvTMQDm108ELg8PDx2ZODw8EfE+7y0F4LswsvHy8jp2YSHTy0t89XY3r78BEHiSjpbDSNi2OQoFIEzeYVb0ugIVs+QuSyr9np2d9ZXzpQN+dqIwq+5qDNht1QJpzzUVdGAOOJtq8LHQ0p8iAJw3ayH6l8JGs+Y54QLJWxayf4Qp20JrMbOvU9mHb8DrKBIUK7M3zVbH/bv3wN9Yx1sUdNyoRdCtY/Zd/ZqDKT2oJ7NWKAOV1lVLWVABB7Vcx/pRbW3oKXJbbicfqcKzwZ1YBM3y96rM0GL8zsJwUVLJ4Nq8HxqVwgsGxrteBRgQBQ=="
+                            data-pagespeed-url-hash="640029359"
+                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                          />
+                          {{ $setting->phone }}</a
+                        >
+                      </div>
+                      <p>
+                        Dialing this on your CaptionCall phone will connect you with Emergency Services. You may not have access to captions, depending on the emergency.
+                      </p>
                     </div>
-                    <p>
-                    Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Donec
-                    males uada lorem maximus mauris sceler isque, at rutrum nulla.
-                    </p>
-                </div>
+                @endif
                 </div>
             </div>
         </div>

@@ -48,10 +48,7 @@
                     </header>
                     <div class="entry-content mt-4">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec malesuada lorem maximus mauris scelerisque, at
-                        rutrum nulla dictum. Ut ac ligula sapien. Suspendisse
-                        cursus faucibus finibus.
+                        Faith Audiology and Speech Therapy organization (FAST) is a speech and language therapy community based organization that was first established in 2017 as Faith over Fear Speech and Language Therapy (FOF). With over 5 years in existence.
                       </p>
                     </div>
                     <footer
@@ -81,10 +78,7 @@
                     </header>
                     <div class="entry-content mt-4">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec malesuada lorem maximus mauris scelerisque, at
-                        rutrum nulla dictum. Ut ac ligula sapien. Suspendisse
-                        cursus faucibus finibus.
+                        Faith Audiology and Speech Therapy organization (FAST) is a speech and language therapy community based organization that was first established in 2017 as Faith over Fear Speech and Language Therapy (FOF). With over 5 years in existence.
                       </p>
                     </div>
                     <footer
@@ -135,8 +129,7 @@
                   >
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Donec
-                  males uada lorem maximus mauris sceler isque, at rutrum nulla.
+                    Dialing this on your CaptionCall phone will connect you with Emergency Services. You may not have access to captions, depending on the emergency.
                 </p>
               </div>
             </div>
@@ -253,7 +246,7 @@
                         /></a>
                       </figure>
                       <header class="entry-header">
-                        <h3>{{ $blog->name }}</h3>
+                        <h3>{!! str_limit(strip_tags($blog->name ),25,'...')  !!}</h3>
                         <div class="post-metas d-flex flex-wrap align-items-center">
                           <div class="posted-date">
                             <label>Date: </label><a href="#">{{date('d F, Y', strtotime(   $blog->created_at )) }}</a>
